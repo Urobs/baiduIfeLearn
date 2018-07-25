@@ -45,3 +45,11 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 ## 分支
 
 `git checkout -b dev // 创建dev分支`
+
+`git branch <name> // 查看分支`
+
+`git checkout <name> // 切换分支`
+
+`git merge <name> // 合并某分支到当前分支`
+
+`git branch -d <name>  // 删除分支`
