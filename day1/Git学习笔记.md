@@ -50,6 +50,8 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 
 `git checkout <name> // 切换分支`
 
+`Fast-forward 模式即直接把master指向dev，所以很快`
+
 `git merge <name> // 合并某分支到当前分支`
 
 `git branch -d <name>  // 删除分支`
