@@ -59,3 +59,5 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 当分支都存在新的提交时，就会产生冲突，无法执行Fast-forward模式，必须手动解决冲突
 
 `git log --graph // 查看分支合并图`
+
+`git merge --no-ff -m "merge with no-ff" dev // --no-ff表示禁用Fast forward, 如果是F f模式因为是直接将master指针指向dev，因此删除dev后会丢失分支信息，而禁用Ff提交一个新的commit，会保留分支信息`
