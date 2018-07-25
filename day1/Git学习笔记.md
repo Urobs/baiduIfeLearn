@@ -34,6 +34,14 @@
 
 `git add` 提交到暂存区， `git commit` 提交到版本库
 
-`git checkout -- file // 丢弃工作取得修改`
+`git checkout -- file // 丢弃工作区的修改`
 
 `git reset HEAD <file>`
+
+## 远程库
+
+push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的git并没有pub ssh key与GitHub相关联，而我习惯性地认为两者是相关联的。
+
+## 分支
+
+`git checkout -b dev // 创建dev分支`
