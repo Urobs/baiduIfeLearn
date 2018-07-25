@@ -61,3 +61,13 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 `git log --graph // 查看分支合并图`
 
 `git merge --no-ff -m "merge with no-ff" dev // --no-ff表示禁用Fast forward, 如果是F f模式因为是直接将master指针指向dev，因此删除dev后会丢失分支信息，而禁用Ff提交一个新的commit，会保留分支信息`
+
+`git stash  // 储存当前工作区`
+
+`git stash list // 列出当前储存的工作区`
+
+`git stash pop // 恢复并删除储存的工作区`
+
+`git stash apply // 恢复储存的工作区`
+
+`git stash drop // 删除储存的工作区`
