@@ -54,4 +54,4 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 
 `git merge <name> // 合并某分支到当前分支`
 
-`git branch -d <name>  // 删除分支`
+当分支都存在新的提交时，就会产生冲突，无法执行Fast-forward模式，必须手动解决冲突
