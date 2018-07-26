@@ -110,5 +110,19 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 
 `git push origin :refs/tags/<tagname> // 删除远程标签`
 
+## 自定义git
+
+`.gitignore文件的里面的后缀名，不提交到版本库`
+
+`git config --global alias.st status //全局配置别名，此例表示st为 status`
+
+`git config --global alias.cm "commit -m" // cm表示 commit -m `
+
+`git config --global alias.br branch // global 为全局参数，意味着命令在这台电脑上的所有git仓库下都可以使用`
+
+**配置文件**
+
+`仓库的配置文件放在.git/config文件中， 而用户的配置文件放在用户的主目录的一个隐藏文件.gitconfig中`
+
 
 
