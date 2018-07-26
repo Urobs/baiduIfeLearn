@@ -90,5 +90,25 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 
 `git rebase // 变基，将一系列提交按照原有次序应用到另一分支上，即为把原来未提交分的分支的提交历史合并成为一条直线 原则是只对未提交的本体修改执行变基操作清理历史，不对推送给别处的历史执行变基操作`
 
+`tag和commit绑定在一起,使commit更容易记`
+
+`git tag <tagname> // 新建一个标签，标签总是和commit挂钩,默认为HEAD，也可以指定一个commit号`
+
+`git tag  // 查看所有标签信息`
+
+`git tag -a <tagname> -m "xxx" // 指定标签信息`
+
+`git show <tagname> // 查看标签信息`
+
+`git tag -d <tagname> // 删除本地标签`
+
+标签在默认情况下只存在于本地，需另外推送到远程
+
+`git push origin  <tagname> // 推送标签到远程`
+
+`git push  origin --tags // 推送全部标签`
+
+`git push origin :refs/tags/<tagname> // 删除远程标签`
+
 
 
