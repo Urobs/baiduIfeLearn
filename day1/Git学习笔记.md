@@ -71,3 +71,24 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 `git stash apply // 恢复储存的工作区`
 
 `git stash drop // 删除储存的工作区`
+
+开发一个新功能使用feature分支
+
+`git branch -D <name> // 强行删除没有被合并的分支`
+
+多人协作工作模式
+
+`git push origin <branch name> // 推送自己的修改`
+
+`git checkout -b deb origin/dev // 创建远程dev分支到本地`
+
+`如果远程推送失败，则意味着远程分支比你的更新，先使用git pull 试图合并；`
+
+`如果合并有冲突， 先解决冲突，再在本地提交`
+
+`解决冲突后，在 git push origin <branch name>`
+
+`git rebase // 变基，将一系列提交按照原有次序应用到另一分支上，即为把原来未提交分的分支的提交历史合并成为一条直线 原则是只对未提交的本体修改执行变基操作清理历史，不对推送给别处的历史执行变基操作`
+
+
+
