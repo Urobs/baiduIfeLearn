@@ -559,3 +559,7 @@ src指定外联的js文件，或者直接嵌入，也可以指定type类型
 > DOCTYPEs are required for legacy reasons. When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications. 
 
 简而言之就是忽略DOCTYPE的话会导致浏览器尝试使用不同的渲染模式，而这种渲染模式可能会导致与某些规范冲突，声明DOCTYPE保证浏览器尽最大可能遵循相关规范
+
+## 关于web语义化
+
+我的理解是人可以通过文章的内容和段落的结构，也就是上下文去判断一段内容的具体语义，而机器只能读取文本，也就是它并不能分辨哪一块内容代表的主题内容，web语义化就能够使文档在程序员编写的时候人为地去设置具体的语义结构，这样通过机器程序就能通过标签的语义去读取相关的内容，进而更好地进行相关的处理
