@@ -1,3 +1,5 @@
+
+
 # Git学习笔记
 
 ## 创建版本库
@@ -109,6 +111,39 @@ push到GitHub仓库我遇到的小问题是使用的Windows Ubuntu子系统的gi
 `git push  origin --tags // 推送全部标签`
 
 `git push origin :refs/tags/<tagname> // 删除远程标签`
+
+变基操作
+
+1. 与merge操作的区别：merge为三方比对（两个分支的最近快照和最近的共同祖先），然后生成一个新的快照。而rebase为提取当前分支的所有修改到C3上。
+2. 两者生成的最终结果所指向的快照是相同的
+
+图解分析
+
+![分支](https://git-scm.com/book/en/v2/images/basic-rebase-1.png)
+
+如果使用merge:
+
+`git checkout master`
+
+`git merge experiment`
+
+那么
+
+![merge](https://git-scm.com/book/en/v2/images/basic-rebase-2.png)
+
+rebase:
+
+`git checkout experiment // 切换到experiment分支`
+
+`git rebase master // 变基 实际上是把c4的修改添加c3生成一个新的快照C4^ 此时当前分支仍然是exp`
+
+`git checkout master // 切换到主分支`
+
+`git merge experiment // 合并分支` 
+
+![变基](https://git-scm.com/book/en/v2/images/basic-rebase-3.png)
+
+
 
 ## 自定义git
 
